@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="sidemenu.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="menu-list">
+            <a href="">
+                <li class="list">
+                    <span><ion-icon name="home"></ion-icon></span>
+                    <span class="menu-item-list">Home</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li class="list">
+                    <span><ion-icon name="person"></ion-icon></span>
+                    <span class="menu-item-list">Profile</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li class="list">
+                    <span><ion-icon name="chatbubble"></ion-icon></span>
+                    <span class="menu-item-list">Messages</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li class="list">
+                    <span><ion-icon name="help-circle"></ion-icon></span>
+                    <span class="menu-item-list">Help</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li class="list">
+                    <span><ion-icon name="settings"></ion-icon></span>
+                    <span class="menu-item-list">Setting</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li>
+                    <span><ion-icon name="lock-closed"></ion-icon></span>
+                    <span class="menu-item-list">Password</span>
+                </li>
+            </a>
+
+            <a href="">
+                <li>
+                    <span><ion-icon name="log-out"></ion-icon></span>
+                    <span class="menu-item-list">Sign Out</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+        let toggle = document.querySelector(".menu-toggle");
+        let navigation = document.querySelector(".navigation")
+        toggle.onclick = function (){
+            navigation.classList.toggle("active")
+            toggle.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

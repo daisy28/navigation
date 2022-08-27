@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop down Menu</title>
+    <link rel="stylesheet" href="dropdown.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="user">
+        <div class="img-container">
+          <img src="./images.jpg" alt="User image" />
+        </div>
+        <div class="user-details">
+          <h2 class="username">Stefan Declan</h2>
+          <h2 class="user-occupation">Front End Developer</h2>
+        </div>
+      </div>
+
+      <div class="menu-list">
+        <ul class="menu-list-items">
+          <a href="">
+            <li>
+              <span class="menu-icons"
+                ><ion-icon name="person-circle-outline"></ion-icon
+              ></span>
+              <span class="menu-item">Edit Profile</span>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <span class="menu-icons"
+                ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+              ></span>
+              <span class="menu-item">Inbox</span>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <span class="menu-icons"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="menu-item">Settings</span>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <span class="menu-icons"
+                ><ion-icon name="help-circle-outline"></ion-icon
+              ></span>
+              <span class="menu-item">Support</span>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <span class="menu-icons"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></span>
+              <span class="menu-item">Logout</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="menu-toggle">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+      </div>
+    </nav>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      let navigation = document.querySelector(".navigation");
+      navigation.onclick = function () {
+        navigation.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

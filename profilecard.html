@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profilecard.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h2>Joanna Declan</h2>
+            <p>Beauty Model</p>
+          <div class="profile-image-container">
+            <img src="./beautiful-white-girl-with-a-red-lipstick-on-lips-stunning-brunette-girl-with-long-hair-tail-closeup-face-of-young-beautiful-woman-with-a-healthy-clean-skin-pretty-woman-with-bright-makeup-700-211.jpg" alt="">
+          </div>
+        <div class="cta">
+            <button class="cta-button">HIRE ME</button>
+        </div>
+        
+        <div class="card-toggle"><ion-icon name="caret-up-outline"></ion-icon></div>
+    <!-- <div class="card-toggle-btn"><ion-icon name="caret-up-outline"></ion-icon></div> -->
+        </div>
+    </div>
+
+    <script>
+        let card = document.querySelector(".card")
+        let toggle = document.querySelector(".card-toggle")
+        toggle.onclick = function(){
+            card.classList.toggle("active")
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

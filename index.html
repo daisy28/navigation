@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="menu-list">
+            <a href="./square-nav.html">
+                <li class="list">
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Bubble Menu</span>
+                </li>
+            </a>
+
+            <a href="./circular-nav.html">
+                <li class="list">
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">360 Menu</span>
+                </li>
+            </a>
+
+            <a href="./dropdown.html">
+                <li class="list">
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Dropdown</span>
+                </li>
+            </a>
+
+            <a href="#">
+                <li class="list">
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Sidebar Menu</span>
+                </li>
+            </a>
+
+            <a href="./popup.html">
+                <li class="list">
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Popup Menu</span>
+                </li>
+            </a>
+
+            <a href="./popup-card.html">
+                <li>
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Popup Card</span>
+                </li>
+            </a>
+
+            <a href="./profilecard.html">
+                <li>
+                    <span><ion-icon name="grid"></ion-icon></span>
+                    <span class="menu-item-list">Profile Card</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+    </div>
+
+    <div class="content">
+        <h1>Website Navigation</h1>
+        <p>Good navigation is one of the most important
+             features of a website. And we're not just
+              saying that — 
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4974011/"> there's research to back it up.</a></p>
+
+        <p>Website navigation is a collection of user interface
+             components that helps visitors find content and 
+             features on a site. These components take the form 
+             of copy,
+             link text and buttons, and menus.</p>
+
+        <p>
+            Now, it would be easy to leave it there and call it a day.
+             However, navigation does more than help us move from one web 
+             page to another — it also helps us understand
+             the relationships between individual pages on a website.
+        </p>
+
+        <p>So I've created some simple navigation menus inspired by <a href="https://www.youtube.com/c/OnlineTutorials4Designers/videos?sub_confirmation=1">
+            Online Tutorials</a> and wanted to share it with you.</p>
+    </div>
+</body>
+
+
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+
+<script>
+    let toggle = document.querySelector(".menu-toggle");
+    let navigation = document.querySelector(".navigation")
+    toggle.onclick = function (){
+        navigation.classList.toggle("active")
+        toggle.classList.toggle("active")
+    }
+</script>
+</html>

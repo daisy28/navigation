@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Card</title>
+    <link rel="stylesheet" href="popup-card.css">
+</head>
+<body>
+    <div class="card">
+        <div class="toggle">
+        </div>
+        <div class="content">
+            <h2>Rose Pink and Purple Combo</h2>
+            <p>Rose Pink is an attractive companion to this confident shade of purple. 
+                Pink and purple are close together on the color wheel and this commonality 
+                ensures that they are two colors that go together well.
+                They are both darker shades of their respective colors 
+                and this changes how they are perceived. Purple and pink in this instance could be 
+                seen as signifiers of creativity and wisdom.</p>
+        </div>
+    </div>
+
+    <script>
+        let card = document.querySelector(".card")
+        let toggle = document.querySelector(".toggle")
+        toggle.onclick = function(){
+            card.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

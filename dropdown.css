@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(61, 59, 126, 0.973);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navigation{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background-color: rgba(121, 119, 173, 0.801);
+    box-shadow: .5px .5px 10px rgba(230, 216, 216, 0.671), -.5px -.5px 10px rgba(230, 216, 216, 0.671);
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 1s;
+    overflow: hidden;
+    
+}
+
+.navigation.active{
+    overflow: hidden;
+    transition: 1s;
+    width: 300px;
+    height: 400px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.img-container{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+
+.img-container img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.user-details{
+    margin-left: 1rem;
+}
+
+.user-details .username{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #272525;
+}
+
+.user-occupation{
+    font-size: .875rem;
+    font-weight: 400;
+    color: #363232;
+}
+
+.menu-list{
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    transition: 2s;
+}
+.menu-list-items li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color: #080808;
+}
+
+.menu-list-items li:hover{
+    color: rgb(196, 188, 188);
+    font-weight: 700;
+}
+
+.menu-list-items ion-icon{
+    width: 26px;
+    height: 26px;
+}
+
+.menu-list-items .menu-item{
+    line-height: 32px;
+    padding-left: .5rem;
+}
+
+.menu-toggle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(61, 59, 126, 0.973) ;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-toggle ion-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.navigation.active .menu-toggle ion-icon{
+    transform: rotate(180deg);
+    color: #fff;
+    transition: .5s;
+}
